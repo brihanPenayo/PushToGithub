@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>DojoWeather Brihan Penayo</title>
+</head>
+
+<body>
+    <header>
+        <h1>DojoWeather</h1>
+        <ul>
+            <li><a href="#" onclick="mostrarMensaje()">Burbank</a></li>
+            <li><a href="#" onclick="mostrarMensaje()">Chicago</a></li>
+            <li><a href="#" onclick="mostrarMensaje()">Dallas</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="sub-header">
+            <div>
+                <h1>San Jose</h1>
+            </div>
+            <div>
+                <p>show temperature in
+                    <select name="grados" id="grados" onchange="cambiarGrados(value)">
+                        <option value="Celsius">°C</option>
+                        <option value="Farenheit">°F</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div id="dias">
+            <div class="card">
+                <h1>Lunes</h1>
+                <img src="img/some_sun.png" alt="Dia caluroso">
+                <p>Mucho calor</p>
+                <div class="temp">
+                    <span class="max">39°</span><span class="min">26°</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Martes</h1>
+                <img src="img/some_sun.png" alt="Dia caluroso">
+                <p>Mucho calor</p>
+                <div class="temp">
+                    <span class="max">33°</span><span class="min">25°</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Miercoles</h1>
+                <img src="img/some_sun.png" alt="Dia caluroso">
+                <p>Mucho calor</p>
+                <div class="temp">
+                    <span class="max">36°</span><span class="min">28°</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Jueves</h1>
+                <img src="img/some_clouds.png" alt="Dia nublado">
+                <p>Dia nublado</p>
+                <div class="temp">
+                    <span class="max">20°</span><span class="min">14°</span>
+                </div>
+            </div>
+        </div>
+        <div class="cookies">
+            <img src="img/cookie.png" alt="Cookies">
+            <div>
+                <h1>Stop! Cookie time</h1>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read more...</a> </p>
+            </div>
+            <button onclick="cerrar()">Acceptar</button>
+        </div>
+    </main>
+</body>
+
+</html>

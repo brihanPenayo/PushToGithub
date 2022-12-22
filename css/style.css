@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Comic Sans MS";
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+header,
+.sub-header,
+#dias {
+    height: 4rem;
+    display: flex;
+    padding: 0 3rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+select {
+    border: 1px solid black;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+header>ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.sub-header {
+    max-width: 70%;
+    margin-inline: auto;
+    border-bottom: 2px solid black;
+}
+
+.sub-header h1 {
+    font-size: 1.8rem;
+}
+
+#dias {
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#dias h1 {
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+.card {
+    background-color: gainsboro;
+    padding: 0.5rem;
+}
+
+#dias>.card {
+    flex: 1;
+}
+
+#dias img {
+    border-radius: 50%;
+    width: 80%;
+    margin: 1rem;
+}
+
+.temp {
+    display: flex;
+    margin: 1rem;
+    font-size: 1.3rem;
+    justify-content: space-around;
+}
+
+.temp>.max {
+    color: red;
+}
+
+.temp>.min {
+    color: cadetblue;
+}
+
+.cookies {
+    outline: 1px solid red;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.cookies>button {
+    width: 10rem;
+    height: 3rem;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.cookies>section>h1,
+p {
+    margin: 1rem 0;
+}
